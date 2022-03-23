@@ -44,7 +44,9 @@ namespace MySQL.Controllers
         public ActionResult Edit(int id, Usuario dadosQueVemTela)
         {
             db.USUARIOS.Update(dadosQueVemTela);
+
             db.SaveChanges();
+
             return RedirectToAction("Index"); ;
         }
 
